@@ -1,0 +1,736 @@
+import React from 'react'
+import './app.css'
+
+
+import AHeader from './components/AHeader';
+import BCarousel from './components/BCarousel';
+import BNewsletter from './components/BNewsletter';
+import CLearningAndJammingBluegrass from './components/CLearningAndJammingBluegrass';
+import DJoinOurEvents from './components/DJoinOurEvents';
+import FContactUS from './components/FContactUS';
+
+
+
+export default function App() {
+  return (
+    <div>
+        <AHeader />
+        <BCarousel />
+        <BNewsletter />
+        <CLearningAndJammingBluegrass />
+        <DJoinOurEvents />
+        <FContactUS />
+    </div>
+  );
+}
+
+
+import React from "react";
+import "flowbite";
+
+export default function AHeader() {
+  return (
+    <div>
+      <header className="bg-white fixed w-full z-50 pt-5 pb-3 mb-50">
+        <nav
+          className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+          aria-label="Global"
+        >
+          <a href="#top">
+            <img
+              href="/#AHeader"
+              className="h-20 w-auto hover:opacity-75"
+              src="/logo-w.png"
+              alt=""
+            ></img>
+          </a>
+
+          <div className="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+              <li>
+                <a
+                  href="/#BNewsletter"
+                  className="block py-2 pl-3 pr-4 font-lg font-libre-bodoni text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  What's New
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#CLearningAndJammingBluegrass"
+                  className="block py-2 pl-3 pr-4 font-lg font-libre-bodoni text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Learning and Jamming Bluegrass
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#DTextResources"
+                  className="block py-2 pl-3 pr-4 font-lg font-libre-bodoni text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Join Our Events
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#FContactMe"
+                  className="block py-2 pl-3 pr-4 font-lg font-libre-bodoni text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+  );
+}
+
+
+import React from "react";
+import "flowbite"; // Ensure Flowbite is imported if you're using a bundler
+
+export default function BCarousel() {
+  return (
+    <div className="flex justify-center items-center pt-36 mt-30">
+      <div
+        id="controls-carousel"
+        className="relative w-full px-12 mt-30"
+        data-carousel="static"
+      >
+        <div className="relative h-56 overflow-hidden rounded-lg md:h-96 z-10 mt-30">
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/jam1.jpg"
+              className="absolute block w-full h-full object-cover"
+              alt="Events"
+            />
+          </div>
+          <div
+            className="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <img
+              src="/welcome2.png"
+              className="absolute block w-full h-full object-cover"
+              alt="Welcome"
+            />
+          </div>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/jam2.JPG"
+              className="absolute block w-full h-full object-cover"
+              alt="David Bowie"
+            />
+          </div>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/jam3.jpg"
+              className="absolute block w-full h-full object-cover"
+              alt="Fun"
+            />
+          </div>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="/jam4.jpg"
+              className="absolute block w-full h-full object-cover"
+              alt="Path"
+            />
+          </div>
+        </div>
+
+        <button
+          type="button"
+          className="absolute top-0 start-0 z-20 flex items-center justify-center h-full px-12 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg
+              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span className="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          className="absolute top-0 end-0 z-20 flex items-center justify-center h-full px-12 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg
+              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span className="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+
+import React from "react";
+
+export default function BNewsletter() {
+  return (
+    <div>
+      <div className="bg-white mt-2" id="CPathAndProgrammes">
+        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <h2 className="text-[#5bb6ad] text-5xl text-center mt-1 mb-12 font-third">
+            What's New?
+          </h2>
+          <div className="mt-10 relative w-full overflow-hidden pt-[56.25%]">
+            <iframe
+              src="https://www.notioniframe.com/notion/lp1gqb4oeci"
+              className="absolute top-[0] left-[0] bottom-[0] right-[0] w-full h-full border-[none]"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+import React from "react";
+
+export default function CLearningAndJammingBluegrass() {
+  return (
+    <div className="bg-white mt-2" id="CPathAndProgrammes">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 className="text-[#5bb6ad] text-5xl text-center mt-1 mb-12 font-third">
+          Learning and Jamming Bluegrass
+        </h2>
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <a
+            href="https://www.youtube.com/@countrymusicinchina6207"
+            className="group"
+            target="_blank"
+          >
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img
+                src="/learnJam1.jpg"
+                alt=""
+                className="h-40 w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <h3 className="mt-4 text-lg font-bold text-gray-900">
+              Offline Jamming Sessions
+            </h3>
+            <p className="mt-1 text-sm font-medium text-gray-500 font-style: italic">
+              Click to see our previous jamming sessions!
+            </p>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@countrymusicinchina6207"
+            className="group"
+            target="_blank"
+          >
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img
+                src="/learnJam2.jpg"
+                alt=""
+                className="h-40 w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <h3 className="mt-4 text-lg font-bold text-gray-900">
+              Learn and Share
+            </h3>
+            <p className="mt-1 text-sm font-medium text-gray-500 font-style: italic">
+              Click to see tutorials for bluegrass instruments
+            </p>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@countrymusicinchina6207"
+            className="group"
+            target="_blank"
+          >
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img
+                src="/learnJam3.jpg"
+                alt=""
+                className="h-40 w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <h3 className="mt-4 text-lg font-bold text-gray-900">
+              Chinese Bluegrass Fusion
+            </h3>
+            <p className="mt-1 text-sm font-medium text-gray-500 font-style: italic">
+              Click to see how we play traditional Chinese songs and Chinese
+              folk songs in a tone of bluegrass
+            </p>
+          </a>
+
+          <a
+            href="https://torchofdoubtandchaos.notion.site/Shanghai-Old-Time-and-Bluegrass-Jam-Repertoire-and-Reference-7bdc395c49884e9b86aa1e448dc78042"
+            className="group"
+            target="_blank"
+          >
+            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img
+                src="/learnJam4.jpg"
+                alt=""
+                className="h-40 w-full object-cover object-center group-hover:opacity-75"
+              />
+            </div>
+            <h3 className="mt-4 text-lg font-bold text-gray-900">
+              Our Song Books
+            </h3>
+            <p className="mt-1 text-sm font-medium text-gray-500 font-style: italic">
+              Click to access to our song books. It will surprise you!
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+import React from "react";
+
+export default function DJoinOurEvents() {
+  return (
+    <div>
+      <div className="bg-white py-12 sm:py-10 mb-20" id="DTextResources">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-[#5bb6ad] text-5xl font-third tracking-tight sm:text-4xl">
+              Join Our Events on Meetups
+            </h2>
+            <p className="mt-1 text-1xl font-medium text-gray-600 font-style: italic">
+              🎸🎵 All skill levels welcome. See you there! 🤠✨
+            </p>
+          </div>
+
+          <div className="mt-16 flex flex-col md:flex-row">
+            <div id="eventDescription" className="md:w-1/2 p-4">
+              <p className="text-[#5bb6ad] text-4xl font-third tracking-tight sm:text-3xl md-8">
+                Hey folks!{" "}
+              </p>
+              <p className="text-2xl sm:text-1xl mt-8">
+                Join us on Mondays at{" "}
+                <a
+                  href="https://www.tripadvisor.com/Attraction_Review-g308272-d6818673-Reviews-The_Tipsy_Fiddler_Irish_Pub-Shanghai.html"
+                  target="_blank"
+                >
+                  <span className="text-[#ffae34] font-style: italic md:hover:text-[#5bb6ad] cursor-pointer">
+                    {" "}
+                    The Tipsy Fiddler{" "}
+                  </span>
+                </a>{" "}
+                in Shanghai from{" "}
+                <span className="text-[#ffae34] font-style: italic">
+                  7-9 pm
+                </span>{" "}
+                for a night of bluegrass, old-time, and American folk. Bring
+                your instruments, share your tunes, and let's make some sweet
+                music together!{" "}
+              </p>
+              <p className="text-2xl sm:text-1xl mt-8">
+                We also update our event schedule on Meetup!{" "}
+                <a href="https://www.meetup.com/shanghai-bluegrass-jam-meetup-group/events/">
+                  <span className="text-[#ffae34] font-style: italic md:hover:text-[#5bb6ad] cursor-pointer">
+                    {" "}
+                    Click here{" "}
+                  </span>
+                </a>{" "}
+                to check out more information.
+              </p>
+            </div>
+
+            <div id="eventMap" className="md:w-1/2 p-4">
+              <a
+                href="https://www.google.com/maps/place/THE+TIPSY+FIDDLER/@31.203512,121.430919,15z/data=!4m6!3m5!1s0x35b265477a05593d:0x5477c1910573c0fa!8m2!3d31.203512!4d121.430919!16s%2Fg%2F11b6vp0_nd?entry=ttu"
+                target="_blank"
+              >
+                <img
+                  src="/mapTipsy.png"
+                  className="w-full h-auto hover:opacity-75"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+import React, { useState } from "react";
+import GModal from "./GModal";
+
+export default function FContactUS() {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+  return (
+    <div>
+      <div>
+        <div className="bg-white py-12 sm:py-10 mb-20">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+              <h2
+                className="text-[#5bb6ad] text-5xl text-center mt-1 mb-12 font-third"
+                id="FContactUS"
+              >
+                Join Us in Making a Difference!
+              </h2>
+            </div>
+
+            <div className="mt-16 flex items-center flex-col md:flex-row">
+              <div id="eventDescription" className="md:w-1/2 p-4">
+                <h2 className="text-[#5bb6ad] text-5xl font-third tracking-tight sm:text-4xl">
+                  We invite you to be a part of our community by:{" "}
+                </h2>
+
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>Spreading the Word:</b> Share our news and updates.
+                </p>
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>Contributing Ideas: </b>Help us brainstorm and develop new
+                  projects.
+                </p>
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>Organizing Events: </b>Assist in planning and hosting
+                  community shows and activities.
+                </p>
+                {/* <p className='text-2xl sm:text-1xl mt-8'><b><a onClick={handleOpenModal}><span className=' md:hover:text-[#5bb6ad]'>Click here</span></a></b> to get involved and make an impact!</p>    */}
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>
+                    <span
+                      className="text-[#ffae34] font-style: italic md:hover:text-[#5bb6ad] cursor-pointer"
+                      onClick={handleOpenModal}
+                    >
+                      Click here
+                    </span>
+                  </b>{" "}
+                  to get involved and make an impact!
+                </p>
+              </div>
+
+              <div id="communityImg" className="md:w-1/2 p-4">
+                <img
+                  src="/communityIMG2.png"
+                  className="w-50 h-auto hover:opacity-75 ml-14"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <GModal open={openModal} onClose={handleCloseModal} />
+
+      <footer className="bg-white dark:bg-gray-900" id="FContactMe">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mt-9">
+          <div className="md:flex md:justify-between"></div>
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+              © 2024 Shanghai Bluegrass. All Rights Reserved.
+            </span>
+            <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+              <a
+                href="https://www.facebook.com/share/JbbtN8sty6hAt29T/"
+                target="_blank"
+                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#1877F2"
+                    d="M24 4C12.954 4 4 12.954 4 24c0 9.851 7.163 18.004 16.438 19.743v-13.95h-4.95v-5.793h4.95v-4.45c0-4.9 2.95-7.593 7.45-7.593 2.15 0 4.393.393 4.393.393v4.85h-2.475c-2.45 0-3.218 1.518-3.218 3.075v3.725h5.475l-.875 5.793h-4.6v13.95C36.837 42.004 44 33.851 44 24 44 12.954 35.046 4 24 4z"
+                  ></path>
+                  <path
+                    fill="#FFF"
+                    d="M30.875 29.793l.875-5.793h-5.475v-3.725c0-1.557.768-3.075 3.218-3.075h2.475v-4.85s-2.243-.393-4.393-.393c-4.5 0-7.45 2.693-7.45 7.593v4.45h-4.95v5.793h4.95v13.95c1.6.3 3.25.45 4.95.45s3.35-.15 4.95-.45v-13.95h4.6z"
+                  ></path>
+                </svg>
+                <span className="sr-only">Facebook</span>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@countrymusicinchina6207"
+                target="_blank"
+                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#FF3D00"
+                    d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"
+                  ></path>
+                  <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                </svg>
+                <span className="sr-only">Youtube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+
+
+import React from "react";
+
+const GModal = ({ open, onClose }) => {
+  if (!open) return null;
+
+  return (
+    <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center mt-10">
+      <div className="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+        <div className="px-4 py-5 sm:p-6">
+          <div className="flex justify-end">
+            <button
+              className="text-gray-500 hover:text-gray-700"
+              onClick={onClose}
+            >
+              X
+            </button>
+          </div>
+          <div className="mt-3 text-center sm:mt-5">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf9Y4L9AFWqpHaoDrl-lg3iCmM68bxFiuYq2RIsm9CL3OCZHw/viewform?embedded=true"
+              width="100%"
+              height="400px"
+              title="Google Form"
+            >
+              Loading…
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default GModal;
+
+
+
+
+Questions:
+
+1 When the screen is on phone size, images of "BCarousel" are completely covered by AHeader. Is there any way we can solve this?
+
+
+
+2 not all the links work (What's New
+Learning and Jamming Bluegrass
+Join Our Events
+Contact Us). like when I click what's new and learning and jamming bluegrass, it doesn't go to the section.Is there any way we can solve this?
+
+3 "Join Us in Making a Difference!" is quite far from the above component and content below. Is there any way we can solve this?
+
+
+
+
+
+
+What jazz was to black communities withinthe urban centers of the United Statesperiphery, bluegrass was to the rural, mostlywhite agricultural and mountainous regions.
+ltself a fusion of other styles -old-timemountain music, square dance fiddlingblues, gospel and jazz - bluegrass, like jazz,allows performers to improvise and take turnsplaying lead. lts distinctive timing surgesslightly ahead of or anticipates the main beatcreating an energized effect. lts vocal rangeis rather high, forcing vocalists into theirupper ranges and creating a tight, almostaustere ,sometimes called "high lonesome"sound.Bluegrass makes frequent use ofclose-harmony duets, trios, and quartets.
+As rhythm and blues, gospel, and jazz surgedin popularity with the proliferation of thephonograph and radio-broadcast music,sodid bluegrass. One of its biggest stars wasbandleader Bill Monroe, who became welknown in the 1940s.
+As rock and roll took over the spotlight in the1950s, country music, R&B, gospel, jazz andbluegrass faded, but all began to innovatefurther and make comebacks during the1960s and 70s.
+
+##old version of FContactUs
+
+import React, { useState } from "react";
+import GModal from "./GModal";
+
+export default function FContactUS() {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+
+  return (
+    <div>
+      <div>
+        <div className="bg-white py-12 sm:py-10 mb-20" id="contactUs">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="my-8 px-4 text-center">
+
+              <h2
+                className="text-[#5bb6ad] text-5xl text-center mt-1 mb-12 font-third"
+                id="FContactUS"
+              >
+                Join us and Being Part of a Unique History!
+              </h2>
+            </div>
+
+            <div className="mt-16 flex items-center flex-col md:flex-row">
+              <div id="eventDescription" className="md:w-1/2 p-4">
+                <h2 className="text-[#5bb6ad] text-5xl font-third tracking-tight sm:text-4xl">
+                  We invite you to be a part of our community by:{" "}
+                </h2>
+
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>Spreading the Word:</b> Share our news and updates.
+                </p>
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>Contributing Ideas: </b>Help us brainstorm and develop new
+                  projects.
+                </p>
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>Organizing Events: </b>Assist in planning and hosting
+                  community shows and activities.
+                </p>
+                {/* <p className='text-2xl sm:text-1xl mt-8'><b><a onClick={handleOpenModal}><span className=' md:hover:text-[#5bb6ad]'>Click here</span></a></b> to get involved and make an impact!</p>    */}
+                <p className="text-2xl sm:text-1xl mt-8">
+                  <b>
+                    <span
+                      className="text-[#ffae34] font-style: italic md:hover:text-[#5bb6ad] cursor-pointer"
+                      onClick={handleOpenModal}
+                    >
+                      Click here
+                    </span>
+                  </b>{" "}
+                  to get involved and make an impact!
+                </p>
+
+              </div>
+
+              <div id="communityImg" className="md:w-1/2 p-4">
+                <img
+                  src="/bluegrassInChina.png"
+                  className="w-50 h-auto hover:opacity-75 ml-14"
+                  id="bluegrassInChinaHistoryImg"
+                />
+              </div> 
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <GModal open={openModal} onClose={handleCloseModal} />
+
+      <footer className="bg-white dark:bg-gray-900" id="FContactMe">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mt-9">
+          <div className="md:flex md:justify-between"></div>
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+              © 2024 Shanghai Bluegrass. All Rights Reserved.
+            </span>
+            <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+              <a
+                href="https://www.facebook.com/share/JbbtN8sty6hAt29T/"
+                target="_blank"
+                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#1877F2"
+                    d="M24 4C12.954 4 4 12.954 4 24c0 9.851 7.163 18.004 16.438 19.743v-13.95h-4.95v-5.793h4.95v-4.45c0-4.9 2.95-7.593 7.45-7.593 2.15 0 4.393.393 4.393.393v4.85h-2.475c-2.45 0-3.218 1.518-3.218 3.075v3.725h5.475l-.875 5.793h-4.6v13.95C36.837 42.004 44 33.851 44 24 44 12.954 35.046 4 24 4z"
+                  ></path>
+                  <path
+                    fill="#FFF"
+                    d="M30.875 29.793l.875-5.793h-5.475v-3.725c0-1.557.768-3.075 3.218-3.075h2.475v-4.85s-2.243-.393-4.393-.393c-4.5 0-7.45 2.693-7.45 7.593v4.45h-4.95v5.793h4.95v13.95c1.6.3 3.25.45 4.95.45s3.35-.15 4.95-.45v-13.95h4.6z"
+                  ></path>
+                </svg>
+                <span className="sr-only">Facebook</span>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@countrymusicinchina6207"
+                target="_blank"
+                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#FF3D00"
+                    d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"
+                  ></path>
+                  <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                </svg>
+                <span className="sr-only">Youtube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+
+
