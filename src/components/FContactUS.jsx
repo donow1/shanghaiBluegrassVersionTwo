@@ -3,7 +3,6 @@ import GModal from "./GModal";
 
 export default function FContactUS() {
   const [openModal, setOpenModal] = useState(false);
-  const [isFullImage, setIsFullImage] = useState(false);
 
   const handleOpenModal = () => {
     setOpenModal(true);
@@ -13,9 +12,6 @@ export default function FContactUS() {
     setOpenModal(false);
   };
 
-  const toggleImageSize = () => {
-    setIsFullImage(!isFullImage);
-  };
 
   return (
     <div>
@@ -66,7 +62,7 @@ export default function FContactUS() {
                 <iframe
                   src="/timelineNew.pdf"
                   frameborder="0"
-                  className="w-11/12 h-96"
+                  className="w-full h-96"
                 ></iframe>
 
                 <p className="text-2xl sm:text-1xl mt-8">
