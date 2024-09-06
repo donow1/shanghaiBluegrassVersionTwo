@@ -27,7 +27,7 @@ export default function BCommunityIntro() {
   return (
     <div
       id="intro"
-      className="justify-center items-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 w-full pt-24 mt-10 sm:mt-16 md:mt-20"
+      className="justify-center items-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 w-full pt-28 sm:pt-36 md:pt-28 mt-24 sm:mt-24 md:mt-20"
     >
       {/* Custom Carousel */}
       <div id="controls-carousel" className="relative w-full h-full px-10 mt-30">
@@ -103,7 +103,7 @@ export default function BCommunityIntro() {
       </div>
 
       {/* Introduction Text */}
-      <div id="introductionText" className="m-x-10px mr-6">
+      <div id="introductionText" className="m-x-10px mr-6 md:w-full sm:w-1/2 p-4">
         <p className="text-2xl font-third tracking-tight sm:text-1xl md-8">
           Hey there, Friends!
         </p>

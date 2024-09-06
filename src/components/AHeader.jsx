@@ -6,7 +6,7 @@ export default function AHeader() {
     <div>
       <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
         <nav
-          className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+          className="max-w-[85rem] w-full mx-auto px-4 md:my-2 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
         >
           <a href="#top">
@@ -18,7 +18,7 @@ export default function AHeader() {
             ></img>
           </a>
 
-          <div className="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
+          <div className="flex flex-row items-center gap-5 mt23 sm:justify-end sm:mt-0 sm:ps-5">
             <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li>
                 <a
