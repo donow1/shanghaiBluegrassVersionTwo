@@ -103,7 +103,7 @@ export default function BCommunityIntro() {
       </div>
 
       {/* Introduction Text */}
-      <div id="introductionText" className="m-x-10px mr-6 md:w-full sm:w-1/2 p-4">
+      <div id="introductionText" className="m-x-10px mr-6 md:w-full p-4">
         <p className="text-2xl font-third tracking-tight sm:text-1xl md-8">
           Hey there, Friends!
         </p>
