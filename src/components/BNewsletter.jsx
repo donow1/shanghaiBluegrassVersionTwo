@@ -9,8 +9,13 @@ export default function BNewsletter() {
             What's New?
           </h2>
           <div className="mt-10 relative w-full overflow-hidden pt-[56.25%]">
-            <iframe
+            {/* <iframe
               src="https://www.notioniframe.com/notion/lp1gqb4oeci"
+              className="absolute top-[0] left-[0] bottom-[0] right-[0] w-full h-full border-[none]"
+            ></iframe> */}
+
+            <iframe
+              src="https://v2-embednotion.com/14c5eec073624b209f5a8c9d51847a02"
               className="absolute top-[0] left-[0] bottom-[0] right-[0] w-full h-full border-[none]"
             ></iframe>
           </div>
