@@ -4,8 +4,8 @@ export default function BCommunityIntro() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
-    { src: "/jam5.jpg", alt: "Path" },
     { src: "/welcome2.png", alt: "Welcome" },
+    { src: "/jam5.jpg", alt: "Path" },
     { src: "/jam1.jpg", alt: "Events" },
     { src: "/jam2.JPG", alt: "David Bowie" },
     { src: "/jam3.jpg", alt: "Fun" },
