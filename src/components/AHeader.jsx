@@ -9,6 +9,8 @@ export default function AHeader() {
           className="max-w-[85rem] w-full mx-auto px-4 md:my-2 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
         >
+
+
           <a href="#top">
             <img
               href="/#AHeader"
@@ -18,12 +20,13 @@ export default function AHeader() {
             ></img>
           </a>
 
-          <div className="flex flex-row items-center gap-5 mt23 sm:justify-end sm:mt-0 sm:ps-5">
+          <div className="flex flex-row items-center gap-5 md:mt-23 sm:justify-end sm:-mt-3 sm:ps-5">
+
             <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li>
                 <a
                   href="/#newsletter"
-                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-3xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
+                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
                 >
                   What's New
                 </a>
@@ -32,7 +35,7 @@ export default function AHeader() {
               <li>
                 <a
                   href="/#learningAndJamming"
-                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-3xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
+                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
                 >
                   Learning and Jamming Bluegrass
                 </a>
@@ -40,7 +43,7 @@ export default function AHeader() {
               <li>
                 <a
                   href="/#joinOurEvents"
-                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-3xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
+                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
                 >
                   Join Our Events
                 </a>
@@ -48,7 +51,7 @@ export default function AHeader() {
               <li>
                 <a
                   href="/#contactUs"
-                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-3xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
+                  className="block py-2 pl-3 pr-4 text-[#ffae34] text-xl font-third tracking-tight sm:text-xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5bb6ad] md:p-0 md:text-3xl"
                 >
                   Contact Us
                 </a>
