@@ -17,7 +17,7 @@ const GModal = ({ open, onClose }) => {
           </div>
           <div className="mt-3 text-center sm:mt-5">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSf9Y4L9AFWqpHaoDrl-lg3iCmM68bxFiuYq2RIsm9CL3OCZHw/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf8EMO2k3gVp4AZenbfCjzs3HMzSFE7KVCmG3ZXnBptyb3Z2w/viewform?embedded=true"
               width="100%"
               height="400px"
               title="Google Form"
@@ -32,3 +32,4 @@ const GModal = ({ open, onClose }) => {
 };
 
 export default GModal;
+
