@@ -9,7 +9,8 @@ export default function BNewsletter() {
             What's New?
           </h2>
 
-          <div className="mt-10 relative w-full overflow-hidden h-96 md:h-[32rem]">
+          {/* Responsive height */}
+          <div className="mt-10 relative w-full overflow-hidden h-[34rem] sm:h-[36rem] md:h-[40rem] lg:h-[32rem]">
             <iframe
               src="https://v2-embednotion.com/14c5eec073624b209f5a8c9d51847a02"
               className="absolute top-0 left-0 bottom-0 right-0 w-full h-full border-none"
