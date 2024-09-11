@@ -40,7 +40,7 @@ export default function FContactUS() {
                 className="text-[#5bb6ad] text-5xl text-center mt-1 mb-12 font-third"
                 id="FContactUS"
               >
-                Join us and Be Part of a Unique History!
+                Join Us and Be Part of a Unique History!
               </h2>
             </div>
 
