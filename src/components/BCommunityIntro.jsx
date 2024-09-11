@@ -27,10 +27,20 @@ export default function BCommunityIntro() {
   return (
     <div
       id="intro"
-      className="justify-center items-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 w-full pt-28 sm:pt-36 md:pt-28 mt-24 sm:mt-24 md:mt-20"
+      className="justify-center items-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 w-full 
+      pt-6
+      sm:pt-8 
+      md:pt-10 
+      
+      mt-20 
+      sm:mt-24 
+      md:mt-28"
     >
       {/* Custom Carousel */}
-      <div id="controls-carousel" className="relative w-full h-full px-10 mt-30">
+      <div
+        id="controls-carousel"
+        className="relative w-full h-full px-10 mt-30"
+      >
         <div className="relative h-96 md:h-[32rem] overflow-hidden rounded-lg z-10 mt-30">
           {/* Carousel slides */}
           {slides.map((slide, index) => (
@@ -121,4 +131,3 @@ export default function BCommunityIntro() {
     </div>
   );
 }
-

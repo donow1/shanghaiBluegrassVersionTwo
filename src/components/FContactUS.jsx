@@ -28,6 +28,14 @@ export default function FContactUS() {
         <div className="bg-white py-12 sm:py-10 mb-20" id="contactUs">
           <div className="mx-auto max-w-7xl px-6">
             <div className="my-8 px-4 text-center">
+
+
+
+
+
+
+
+
               <h2
                 className="text-[#5bb6ad] text-5xl text-center mt-1 mb-12 font-third"
                 id="FContactUS"
@@ -38,9 +46,16 @@ export default function FContactUS() {
 
             <div className="mt-16 flex items-center flex-col md:flex-row">
               <div id="eventDescription" className="md:w-1/2 p-4">
-                <h2 className="text-[#5bb6ad] text-5xl font-third tracking-tight sm:text-4xl">
+
+
+                <h2 className="text-[#5bb6ad] text-3xl sm:text-5xl font-third tracking-tight ">
                   We invite you to be a part of our community by:{" "}
                 </h2>
+
+
+
+
+
 
                 <p className="text-2xl sm:text-1xl mt-8">
                   <b>Spreading the Word:</b> Share our news and updates.

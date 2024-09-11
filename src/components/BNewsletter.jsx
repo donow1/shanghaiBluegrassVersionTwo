@@ -8,15 +8,12 @@ export default function BNewsletter() {
           <h2 className="text-[#5bb6ad] text-5xl text-center mt-1 mb-12 font-third">
             What's New?
           </h2>
-          <div className="mt-10 relative w-full overflow-hidden pt-[56.25%]">
-            {/* <iframe
-              src="https://www.notioniframe.com/notion/lp1gqb4oeci"
-              className="absolute top-[0] left-[0] bottom-[0] right-[0] w-full h-full border-[none]"
-            ></iframe> */}
 
+          <div className="mt-10 relative w-full overflow-hidden h-96 md:h-[32rem]">
             <iframe
               src="https://v2-embednotion.com/14c5eec073624b209f5a8c9d51847a02"
-              className="absolute top-[0] left-[0] bottom-[0] right-[0] w-full h-full border-[none]"
+              className="absolute top-0 left-0 bottom-0 right-0 w-full h-full border-none"
+              title="Newsletter Embed"
             ></iframe>
           </div>
         </div>
