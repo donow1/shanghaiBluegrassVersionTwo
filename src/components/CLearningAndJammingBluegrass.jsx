@@ -9,7 +9,7 @@ export default function CLearningAndJammingBluegrass() {
         </h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           <a
-            href="https://www.youtube.com/playlist?list=PL4I-RJ7U73rxHQDQzRCKRJzvVZ8-GklJv"
+            href="https://www.youtube.com/playlist?list=PL4I-RJ7U73rxvJ_kZIPVwX2oZnNDO6y9n"
             className="group"
             target="_blank"
           >
